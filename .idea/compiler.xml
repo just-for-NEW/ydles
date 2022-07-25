@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ydles_common_db" />
+        <module name="ydles_common" />
+        <module name="ydles_eureka" />
+        <module name="ydles_service_goods" />
+        <module name="ydles_gateway" />
+        <module name="ydles_web" />
+        <module name="ydles_service_goods_api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ydles_common" options="-parameters" />
+      <module name="ydles_common_db" options="-parameters" />
+      <module name="ydles_eureka" options="-parameters" />
+      <module name="ydles_gateway" options="-parameters" />
+      <module name="ydles_parent" options="-parameters" />
+      <module name="ydles_service" options="-parameters" />
+      <module name="ydles_service_api" options="-parameters" />
+      <module name="ydles_service_goods" options="-parameters" />
+      <module name="ydles_service_goods_api" options="-parameters" />
+      <module name="ydles_web" options="-parameters" />
+    </option>
+  </component>
+</project>

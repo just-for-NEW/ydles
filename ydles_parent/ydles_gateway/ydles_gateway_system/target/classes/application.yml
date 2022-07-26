@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: sysgateway
+  cloud:
+    gateway:
+      routes:
+        - id: goods
+          uri: lb://goods
+          predicates:
+            - Path=/goods/**
+          filters:
+            - StripPrefix= 1
+        - id: system
+          uri: lb://system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix= 1
+  redis:
+    host: 192.168.200.128
+server:
+  port: 9101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true

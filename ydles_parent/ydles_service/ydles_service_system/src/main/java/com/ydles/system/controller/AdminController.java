@@ -3,7 +3,7 @@ import com.ydles.entity.PageResult;
 import com.ydles.entity.Result;
 import com.ydles.entity.StatusCode;
 import com.ydles.system.service.AdminService;
-import com.ydles.pojo.Admin;
+import com.ydles.system.pojo.Admin;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -101,6 +101,18 @@ public class AdminController {
         Page<Admin> pageList = adminService.findPage(searchMap, page, size);
         PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
+    }
+
+
+    @PostMapping("login")
+    public Result login(@RequestBody Admin admin){
+        boolean flag = adminService.login(admin);
+        if (flag){
+            return new Result(true,StatusCode.OK,"登录成功");
+        }else {
+            return new Result(false,StatusCode.LOGINERROR,"用户名或密码错误");
+        }
+
     }
 
 

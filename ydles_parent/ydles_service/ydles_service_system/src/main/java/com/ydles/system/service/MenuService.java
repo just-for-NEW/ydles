@@ -1,6 +1,6 @@
 package com.ydles.system.service;
 
-import com.ydles.pojo.Menu;
+import com.ydles.system.pojo.Menu;
 import com.github.pagehelper.Page;
 
 import java.util.List;

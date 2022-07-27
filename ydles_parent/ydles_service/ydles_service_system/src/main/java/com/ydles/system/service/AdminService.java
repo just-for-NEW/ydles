@@ -1,7 +1,8 @@
 package com.ydles.system.service;
 
-import com.ydles.pojo.Admin;
+
 import com.github.pagehelper.Page;
+import com.ydles.system.pojo.Admin;
 
 import java.util.List;
 import java.util.Map;
@@ -64,6 +65,6 @@ public interface AdminService {
     Page<Admin> findPage(Map<String, Object> searchMap, int page, int size);
 
 
-
-
+    // 登录
+    boolean login(Admin admin);
 }

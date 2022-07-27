@@ -1,11 +1,12 @@
 package com.ydles.system.service.impl;
 
 import com.ydles.system.dao.AdminMapper;
+import com.ydles.system.pojo.Admin;
 import com.ydles.system.service.AdminService;
-import com.ydles.pojo.Admin;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
@@ -44,6 +45,10 @@ public class AdminServiceImpl implements AdminService {
      */
     @Override
     public void add(Admin admin){
+        // 把明文转成密文存到数据库
+        String password = admin.getPassword();
+        String hashpw = BCrypt.hashpw(password, BCrypt.gensalt());
+        admin.setPassword(hashpw);
         adminMapper.insert(admin);
     }
 
@@ -102,6 +107,23 @@ public class AdminServiceImpl implements AdminService {
         PageHelper.startPage(page,size);
         Example example = createExample(searchMap);
         return (Page<Admin>)adminMapper.selectByExample(example);
+    }
+
+    @Override
+    public boolean login(Admin admin) {
+        String password = admin.getPassword();
+        // 1.通过用户名查询数据库
+        Admin queryAdmin = new Admin();
+        queryAdmin.setLoginName(admin.getLoginName());
+        queryAdmin.setStatus("1");
+        Admin dbAdmin = adminMapper.selectOne(queryAdmin);
+        // 2.密码对比
+        if (dbAdmin == null){
+            // 用户不存在
+            return false;
+        }else {
+            return BCrypt.checkpw(password, dbAdmin.getPassword());
+        }
     }
 
     /**

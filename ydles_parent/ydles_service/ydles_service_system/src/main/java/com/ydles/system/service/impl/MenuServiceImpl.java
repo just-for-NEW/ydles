@@ -2,7 +2,7 @@ package com.ydles.system.service.impl;
 
 import com.ydles.system.dao.MenuMapper;
 import com.ydles.system.service.MenuService;
-import com.ydles.pojo.Menu;
+import com.ydles.system.pojo.Menu;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

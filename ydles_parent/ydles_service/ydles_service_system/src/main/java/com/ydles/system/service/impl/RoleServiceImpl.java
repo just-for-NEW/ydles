@@ -2,7 +2,7 @@ package com.ydles.system.service.impl;
 
 import com.ydles.system.dao.RoleMapper;
 import com.ydles.system.service.RoleService;
-import com.ydles.pojo.Role;
+import com.ydles.system.pojo.Role;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@ package com.ydles.system.service.impl;
 
 import com.ydles.system.dao.LoginLogMapper;
 import com.ydles.system.service.LoginLogService;
-import com.ydles.pojo.LoginLog;
+import com.ydles.system.pojo.LoginLog;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

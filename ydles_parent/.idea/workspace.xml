@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4c52d15-4e6b-4f24-ae04-906ed7028547" name="Default Changelist" comment="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章" />
+    <list default="true" id="e4c52d15-4e6b-4f24-ae04-906ed7028547" name="Default Changelist" comment="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/filters/IpFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/filters/UrlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/test/java/com/ydles/TestBCrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/com/ydles/system/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/com/ydles/system/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/LoginLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/LoginLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/ResourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/LoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/LoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/ResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/ResourceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/LoginLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/LoginLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/ResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/LoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/LoginLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/ResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/ResourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/RoleServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,13 +65,15 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1zMAwMEnWARPyoz0z9EBfS16k7E" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -65,7 +99,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.090415895" />
     <property name="project.structure.side.proportion" value="0.31111112" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -86,58 +120,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GoodsApplication">
-    <configuration name="FIleCOntroller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ydles.file.controller.FIleCOntroller" />
-      <module name="ydles_service_file" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ydles.file.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="HTTP 请求.generated-requests#4">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ydles_eureka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ydles.eureka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ydles.eureka.EurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="运行单个请求">
+      <method v="2" />
     </configuration>
-    <configuration name="FileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ydles_service_file" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ydles.file.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ydles.file.FileApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="运行单个请求">
+      <method v="2" />
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ydles_gateway_system" />
@@ -165,12 +164,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ydles_service_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ydles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ydles.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SystemApplication" />
+        <item itemvalue="HTTP 请求.generated-requests#4" />
+        <item itemvalue="HTTP 请求.generated-requests#3" />
         <item itemvalue="Spring Boot.GoodsApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.FileApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +202,10 @@
       <workItem from="1658739223555" duration="8061000" />
       <workItem from="1658802304347" duration="1970000" />
       <workItem from="1658805951716" duration="18007000" />
-      <workItem from="1658888477165" duration="1959000" />
+      <workItem from="1658888477165" duration="3680000" />
+      <workItem from="1658892594222" duration="8372000" />
+      <workItem from="1658918815138" duration="3871000" />
+      <workItem from="1658923365534" duration="3401000" />
     </task>
     <task id="LOCAL-00001" summary="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章">
       <created>1658835990374</created>
@@ -205,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658890341949</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章">
+      <created>1658890597852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658890597852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

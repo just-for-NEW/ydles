@@ -3,7 +3,7 @@ import com.ydles.entity.PageResult;
 import com.ydles.entity.Result;
 import com.ydles.entity.StatusCode;
 import com.ydles.system.service.RoleService;
-import com.ydles.pojo.Role;
+import com.ydles.system.pojo.Role;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

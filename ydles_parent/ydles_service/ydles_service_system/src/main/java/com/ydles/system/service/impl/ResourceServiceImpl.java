@@ -2,7 +2,7 @@ package com.ydles.system.service.impl;
 
 import com.ydles.system.dao.ResourceMapper;
 import com.ydles.system.service.ResourceService;
-import com.ydles.pojo.Resource;
+import com.ydles.system.pojo.Resource;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

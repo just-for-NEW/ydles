@@ -3,7 +3,7 @@ import com.ydles.entity.PageResult;
 import com.ydles.entity.Result;
 import com.ydles.entity.StatusCode;
 import com.ydles.system.service.ResourceService;
-import com.ydles.pojo.Resource;
+import com.ydles.system.pojo.Resource;
 import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

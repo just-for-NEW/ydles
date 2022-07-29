@@ -1,14 +1,21 @@
 package com.ydles.goods.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.ydles.goods.dao.BrandMapper;
+import com.ydles.goods.dao.CategoryMapper;
+import com.ydles.goods.dao.SkuMapper;
 import com.ydles.goods.dao.SpuMapper;
+import com.ydles.goods.pojo.*;
 import com.ydles.goods.service.SpuService;
-import com.ydles.goods.pojo.Spu;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.ydles.util.IdWorker;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -38,15 +45,87 @@ public class SpuServiceImpl implements SpuService {
     }
 
 
+    @Autowired
+    IdWorker idWorker;
     /**
      * 增加
-     * @param spu
+     * @param goods
      */
     @Override
-    public void add(Spu spu){
-        spuMapper.insert(spu);
+    public void add(Goods goods){
+        // 1 spu插入
+        Spu spu = goods.getSpu();
+        long spuId = idWorker.nextId();
+        spu.setId(spuId+"");
+        // 未上架
+        spu.setIsMarketable("0");
+        // 启用
+        spu.setIsEnableSpec("1");
+        // 未删除
+        spu.setIsDelete("0");
+        // 未审核
+        spu.setStatus("0");
+        spuMapper.insertSelective(spu);
+
+        // 2 skuList插入
+        saveSkuList(goods);
     }
 
+    @Autowired
+    SkuMapper skuMapper;
+    @Autowired
+    CategoryMapper categoryMapper;
+    @Autowired
+    BrandMapper brandMapper;
+
+    // skuList插入
+    private void saveSkuList(Goods goods){
+        List<Sku> skuList = goods.getSkuList();
+        Spu spu = goods.getSpu();
+        String spuName = spu.getName();
+        String spuId = spu.getId();
+        Integer category3Id = spu.getCategory3Id();
+        Category category = categoryMapper.selectByPrimaryKey(category3Id);
+        Integer brandId = spu.getBrandId();
+        Brand brand = brandMapper.selectByPrimaryKey(brandId);
+        for (Sku sku : skuList) {
+            long skuId = idWorker.nextId();
+            sku.setId(skuId+"");
+            // skuName  spuName+spec 值
+            String skuName = spuName;
+            String specStr = sku.getSpec();
+            if (StringUtils.isEmpty(specStr)){
+                specStr = "{}";
+            }
+            Map specMap = JSON.parseObject(specStr, Map.class);
+            if (specMap != null&&specMap.size() > 0){
+                for (Object value : specMap.values()) {
+                    skuName += "" + value;
+                }
+            }
+
+            sku.setName(skuName);
+            // time
+            sku.setCreateTime(new Date());
+            sku.setUpdateTime(new Date());
+            // spuId
+            sku.setSpuId(spuId);
+            // category
+            sku.setCategoryId(category.getId());
+            sku.setCategoryName(category.getName());
+            // brand
+            sku.setBrandName(brand.getName());
+            // 销量
+            sku.setSaleNum(0);
+            // 评论数
+            sku.setCommentNum(0);
+            // 通过审核
+            sku.setStatus("1");
+
+            skuMapper.insertSelective(sku);
+        }
+
+    }
 
     /**
      * 修改

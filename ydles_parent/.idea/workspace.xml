@@ -4,38 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4c52d15-4e6b-4f24-ae04-906ed7028547" name="Default Changelist" comment="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/filters/IpFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/filters/UrlFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/test/java/com/ydles/TestBCrypt.java" afterDir="false" />
+    <list default="true" id="e4c52d15-4e6b-4f24-ae04-906ed7028547" name="Default Changelist" comment="第三次提交:1网关模块新增，网关实现跨域和过滤器及限流功能(令牌桶算法) 2.系统模块新增:BCrypt加密算法验证，通过管理员注册和登录实现&#10;(此次提交提交未遇到运行bug)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_common/src/main/java/com/ydles/util/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/filters/AuthorizeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/test/java/com/ydles/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/test/java/com/ydles/TestJWT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ydles_service_api/ydles_service_goods_api/src/main/java/com/ydles/goods/pojo/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/java/com/ydles/system/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/com/ydles/system/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/target/classes/com/ydles/system/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/ydles_gateway_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/ydles_gateway_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/GoodsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/GoodsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/controller/SpuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/service/SpuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/java/com/ydles/goods/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/GoodsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/GoodsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/controller/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/controller/SpuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/service/SpuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/service/SpuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/target/classes/com/ydles/goods/service/impl/SpuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_goods/ydles_service_goods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_goods/ydles_service_goods.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/LoginLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/LoginLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/ResourceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/LoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/LoginLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/MenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/ResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/ResourceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/dao/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/LoginLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/LoginLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/ResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/LoginLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/LoginLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/ResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/ResourceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/src/main/java/com/ydles/system/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service/ydles_service_system/ydles_service_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service/ydles_service_system/ydles_service_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service_api/ydles_service_goods_api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service_api/ydles_service_goods_api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ydles_service_api/ydles_service_goods_api/ydles_service_goods_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ydles_service_api/ydles_service_goods_api/ydles_service_goods_api.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ydles_common/src/main/java/com/ydles/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,6 +101,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\动力二奢交易网资源\ydles_parent\ydles_common\src\main\java\com\ydles\util" />
       <recent name="D:\project\动力二奢交易网资源\第2章 分布式文件存储解决方案-fastDFS\资源\基础架构代码\ydles_parent\ydles_service\ydles_service_file\src\main\java\com\ydles\file\util" />
       <recent name="E:\course\xiangmu\动力二奢交易平台\02 分布式文件存储解决方案-fastDFS\资源\基础架构代码\ydles_parent\ydles_service\ydles_service_file\src\main\java\com\ydles\file\controller\utils" />
     </key>
@@ -120,23 +119,32 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP 请求.generated-requests#4">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="应用程序.IdWorker">
+    <configuration name="IdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ydles.util.IdWorker" />
+      <module name="ydles_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ydles.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="运行单个请求">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="运行单个请求">
-      <method v="2" />
+    <configuration name="RedisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ydles.RedisTest" />
+      <module name="ydles_gateway_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ydles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ydles_gateway_system" />
@@ -179,10 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SystemApplication" />
-        <item itemvalue="HTTP 请求.generated-requests#4" />
-        <item itemvalue="HTTP 请求.generated-requests#3" />
         <item itemvalue="Spring Boot.GoodsApplication" />
+        <item itemvalue="应用程序.IdWorker" />
+        <item itemvalue="应用程序.RedisTest" />
+        <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
@@ -205,7 +213,9 @@
       <workItem from="1658888477165" duration="3680000" />
       <workItem from="1658892594222" duration="8372000" />
       <workItem from="1658918815138" duration="3871000" />
-      <workItem from="1658923365534" duration="3401000" />
+      <workItem from="1658923365534" duration="3702000" />
+      <workItem from="1658974696546" duration="23644000" />
+      <workItem from="1659062682921" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章">
       <created>1658835990374</created>
@@ -228,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658890597852</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="第三次提交:1网关模块新增，网关实现跨域和过滤器及限流功能(令牌桶算法) 2.系统模块新增:BCrypt加密算法验证，通过管理员注册和登录实现&#10;(此次提交提交未遇到运行bug)">
+      <created>1658927230074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658927230074</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +265,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="二奢商城完全体基础框架搭建。新增商品服务复杂mapper查询、FastDFS搭建（文件存储微服务功能）、搭建网关微服务&#10;第一次提交的bug已解决，此次bug见附录文章" />
+    <MESSAGE value="第三次提交:1网关模块新增，网关实现跨域和过滤器及限流功能(令牌桶算法) 2.系统模块新增:BCrypt加密算法验证，通过管理员注册和登录实现&#10;(此次提交提交未遇到运行bug)" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三次提交:1网关模块新增，网关实现跨域和过滤器及限流功能(令牌桶算法) 2.系统模块新增:BCrypt加密算法验证，通过管理员注册和登录实现&#10;(此次提交提交未遇到运行bug)" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.ydles.goods.service;
 
+import com.ydles.goods.pojo.Goods;
 import com.ydles.goods.pojo.Spu;
 import com.github.pagehelper.Page;
 
@@ -23,9 +24,9 @@ public interface SpuService {
 
     /***
      * 新增
-     * @param spu
+     * @param goods
      */
-    void add(Spu spu);
+    void add(Goods goods);
 
     /***
      * 修改

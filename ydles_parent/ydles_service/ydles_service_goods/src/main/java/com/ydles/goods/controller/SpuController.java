@@ -2,6 +2,7 @@ package com.ydles.goods.controller;
 import com.ydles.entity.PageResult;
 import com.ydles.entity.Result;
 import com.ydles.entity.StatusCode;
+import com.ydles.goods.pojo.Goods;
 import com.ydles.goods.service.SpuService;
 import com.ydles.goods.pojo.Spu;
 import com.github.pagehelper.Page;
@@ -42,12 +43,12 @@ public class SpuController {
 
     /***
      * 新增数据
-     * @param spu
+     * @param goods
      * @return
      */
     @PostMapping
-    public Result add(@RequestBody Spu spu){
-        spuService.add(spu);
+    public Result add(@RequestBody Goods goods){
+        spuService.add(goods);
         return new Result(true,StatusCode.OK,"添加成功");
     }
 

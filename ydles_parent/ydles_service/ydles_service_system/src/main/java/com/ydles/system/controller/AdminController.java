@@ -5,10 +5,15 @@ import com.ydles.entity.StatusCode;
 import com.ydles.system.service.AdminService;
 import com.ydles.system.pojo.Admin;
 import com.github.pagehelper.Page;
+import com.ydles.system.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
+
 @RestController
 @CrossOrigin
 @RequestMapping("/admin")
@@ -108,7 +113,12 @@ public class AdminController {
     public Result login(@RequestBody Admin admin){
         boolean flag = adminService.login(admin);
         if (flag){
-            return new Result(true,StatusCode.OK,"登录成功");
+            // 返回前端 map username token
+            Map<String,String> map = new HashMap<>();
+            map.put("usernmae",admin.getLoginName());
+            String jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), admin.getLoginName(), null);
+            map.put("token",jwt);
+            return new Result(true,StatusCode.OK,"登录成功",map);
         }else {
             return new Result(false,StatusCode.LOGINERROR,"用户名或密码错误");
         }

@@ -36,8 +36,9 @@ public class SpuController {
      */
     @GetMapping("/{id}")
     public Result findById(@PathVariable String id){
-        Spu spu = spuService.findById(id);
-        return new Result(true,StatusCode.OK,"查询成功",spu);
+       // Spu spu = spuService.findById(id);
+        Goods goods = spuService.findById(id);
+        return new Result(true,StatusCode.OK,"查询成功",goods);
     }
 
 
@@ -55,14 +56,14 @@ public class SpuController {
 
     /***
      * 修改数据
-     * @param spu
+     * @param goods
      * @param id
      * @return
      */
     @PutMapping(value="/{id}")
-    public Result update(@RequestBody Spu spu,@PathVariable String id){
-        spu.setId(id);
-        spuService.update(spu);
+    public Result update(@RequestBody Goods goods,@PathVariable String id){
+
+        spuService.update(goods);
         return new Result(true,StatusCode.OK,"修改成功");
     }
 
@@ -104,5 +105,39 @@ public class SpuController {
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
+    // 审核通过
+    @PutMapping("/audit/{id}")
+    public Result audit(@PathVariable("id") String id){
+        spuService.audit(id);
+        return new Result(true,StatusCode.OK,"审核通过");
+    }
+
+    // 下架
+    @PutMapping("/pull/{id}")
+    public Result pull(@PathVariable("id") String id){
+        spuService.pull(id);
+        return new Result(true,StatusCode.OK,"下架成功");
+    }
+
+    // 上架
+    @PutMapping("/put/{id}")
+    public Result put(@PathVariable("id") String id){
+        spuService.put(id);
+        return new Result(true,StatusCode.OK,"上架成功");
+    }
+
+    // 还原商品
+    @PutMapping("/restore/{id}")
+    public Result restore(@PathVariable("id") String id){
+        spuService.restore(id);
+        return new Result(true,StatusCode.OK,"还原成功");
+    }
+
+    // 删除商品（物理删除)
+    @DeleteMapping("/realDelete/{id}")
+    public Result realDelete(@PathVariable("id") String id){
+        spuService.realDelete(id);
+        return new Result(true,StatusCode.OK,"物理删除成功");
+    }
 
 }

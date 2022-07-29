@@ -20,7 +20,7 @@ public interface SpuService {
      * @param id
      * @return
      */
-    Spu findById(String id);
+    Goods findById(String id);
 
     /***
      * 新增
@@ -30,9 +30,9 @@ public interface SpuService {
 
     /***
      * 修改
-     * @param spu
+     * @param goods
      */
-    void update(Spu spu);
+    void update(Goods goods);
 
     /***
      * 删除
@@ -65,6 +65,18 @@ public interface SpuService {
     Page<Spu> findPage(Map<String, Object> searchMap, int page, int size);
 
 
+    // 审核通过
+    void audit(String id);
 
+    // 下架通过
+    void pull(String id);
 
+    // 上架通过
+    void put(String id);
+
+    // 还原商品
+    void restore(String id);
+
+    // 回收站删除商品(物理删除)
+    void realDelete(String id);
 }

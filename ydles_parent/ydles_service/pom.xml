@@ -19,6 +19,7 @@
         <module>ydles_service_user</module>
         <module>ydles_service_system</module>
         <module>ydles_service_file</module>
+        <module>ydles_service_search</module>
 
     </modules>
 

@@ -18,6 +18,7 @@
         <module>ydles_service_business_api</module>
         <module>ydles_service_system_api</module>
         <module>ydles_service_user_api</module>
+        <module>ydles_service_search_api</module>
     </modules>
 
     <dependencies>

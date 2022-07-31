@@ -12,15 +12,19 @@
     <artifactId>ydles_canal</artifactId>
 
     <dependencies>
+        <!--canal相关-->
         <dependency>
             <groupId>com.xpand</groupId>
             <artifactId>starter-canal</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!--rabbitMq相关-->
         <dependency>
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

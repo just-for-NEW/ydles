@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ydles_common_db" />
+        <module name="ydles_service_search" />
         <module name="ydles_canal" />
         <module name="ydles_service_system_api" />
         <module name="ydles_service_user" />
@@ -15,6 +16,7 @@
         <module name="ydles_service_goods" />
         <module name="ydles_service_config_api" />
         <module name="ydles_service_system" />
+        <module name="ydles_service_search_api" />
         <module name="ydles_gateway_system" />
         <module name="ydles_service_business" />
         <module name="ydles_web" />
@@ -47,6 +49,8 @@
       <module name="ydles_service_goods_api" target="1.8" />
       <module name="ydles_service_order" target="1.8" />
       <module name="ydles_service_order_api" target="1.8" />
+      <module name="ydles_service_search" target="1.8" />
+      <module name="ydles_service_search_api" target="1.8" />
       <module name="ydles_service_system" target="1.8" />
       <module name="ydles_service_system_api" target="1.8" />
       <module name="ydles_service_user" target="1.8" />
@@ -71,6 +75,8 @@
       <module name="ydles_service_goods_api" options="-parameters" />
       <module name="ydles_service_order" options="-parameters" />
       <module name="ydles_service_order_api" options="-parameters" />
+      <module name="ydles_service_search" options="-parameters" />
+      <module name="ydles_service_search_api" options="-parameters" />
       <module name="ydles_service_system" options="-parameters" />
       <module name="ydles_service_system_api" options="-parameters" />
       <module name="ydles_service_user" options="-parameters" />

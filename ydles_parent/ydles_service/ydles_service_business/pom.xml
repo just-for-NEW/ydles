@@ -26,6 +26,18 @@
             <artifactId>ydles_service_business_api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!-- mq依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!-- 远程调用依赖 -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.9.0</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * es管理数据模块
+ */
 @RestController
 @RequestMapping("/manager")
 public class ESManagerController {

@@ -1,0 +1,185 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: url(/static/img/_/manage-bg.png) center no-repeat;
+  background-size: cover;
+}
+.loginmanage .py-container {
+  width: 420px;
+  margin: 6% 240px;
+  float: right;
+}
+.loginmanage {
+  height: 500px;
+  width: 1920px;
+  /* background: url(../img/_/manage-bg.png);
+  background-size: 100% 100%; */
+  vertical-align: middle;
+  display: table-cell;
+}
+.loginmanage .manage-title {
+  width: 420px;
+  margin: 40px auto;
+  font-size: 30px;
+  color: #333;
+  letter-spacing: 5px;
+}
+.loginform {
+  width: 380px;
+  background: #fff;
+  margin: 45px auto 0;
+  position: relative;
+  padding: 20px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.sui-form input[type="text"]:focus, 
+.sui-form input[type="password"]:focus {
+  border-color: rgb(0, 127, 255);
+}
+.sui-form {
+  margin-top: 10px;
+}
+span.loginname {
+  background-image: url(../img/icons.png);
+  background-position: -10px -201px;
+}
+.sui-form .input-prepend {
+  margin-bottom: 22px;
+}
+.sui-nav.nav-tabs.tab-wraped > li {
+  width: 50%;
+}
+.sui-nav.nav-tabs.tab-wraped > li.active > a {
+  padding-top: 0;
+  border-top: 1px solid #eee;
+}
+.sui-nav.nav-tabs.tab-wraped > li > a {
+  padding: 0;
+}
+.sui-nav.nav-tabs.tab-wraped > li.active h3 {
+  color: #007fff;
+}
+.sui-form .input-prepend .add-on {
+  padding: 6px 5px;
+  background-color: #fff;
+  width: 25px;
+  *float: left;
+}
+
+.sui-form input.span2 {
+  width: 284px;
+  *float: left;
+}
+.loginpwd {
+  background-image: url(../img/icons.png);
+  background-position: -72px -201px;
+  display: block;
+  width: 25px;
+  height: 23px;
+}
+.setting {
+  position: relative;
+  margin: 0 0 32px;
+}
+.setting .forget {
+  position: absolute;
+  right: 0;
+}
+.btn-danger {
+  background-color: #007fff;
+  border-color: #007fff;
+  padding: 6px;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: 微软雅黑;
+  word-spacing: 4px;
+}
+.btn-danger:hover, .btn-danger:focus {
+  background-color: #007fff;
+  border-color: #007fff;
+  opacity: .9;
+}
+.otherlogin {
+  position: relative;
+  margin-top: 30px;
+}
+.otherlogin .register {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
+}
+.types ul li {
+  list-style-type: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 40px;
+  height: 55px;
+}
+#slider {
+  height: 40px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #adc7fd;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #007fff;
+  z-index: 1;
+}
+#label {
+  width: 46px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #eee;
+  background: #fff;
+  z-index: 3;
+  cursor: move;
+  color: #75b6f9;
+  font-size: 16px;
+  font-weight: 900;
+}
+#labelTip {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: "Microsoft Yahei", serif;
+  color: #787878;
+  line-height: 38px;
+  text-align: center;
+  background-color: #ebf0fc;
+  z-index: 2;
+}
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+.copyright ul li {
+  list-style-type: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-right: 1px solid #e4e4e4;
+  padding: 0 20px;
+  margin: 15px 0;
+}
+.copyright ul li:last-child {
+  border-right: 0;
+}

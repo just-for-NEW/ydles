@@ -9,13 +9,13 @@ import java.util.List;
  */
 public class Page<T> implements Serializable{
 
-	//当前默认为第一页
+	// 当前默认为第一页
 	public static final Integer pageNum = 1;
-	//默认每页显示条件
+	// 默认每页显示条件
 	public static final Integer pageSize = 20;
 
 
-	//判断当前页是否为空或是小于1
+	// 判断当前页是否为空或是小于1
 	public static Integer cpn(Integer pageNum){
 		if(null == pageNum || pageNum < 1){
 			pageNum = 1;

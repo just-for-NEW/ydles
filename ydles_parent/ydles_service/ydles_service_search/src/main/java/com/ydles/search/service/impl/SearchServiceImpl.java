@@ -28,10 +28,7 @@ import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilde
 import org.springframework.stereotype.Service;
 
 import javax.swing.text.Highlighter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -193,8 +190,36 @@ public class SearchServiceImpl implements SearchService {
             // 把规格聚合结果前端返回
             StringTerms specStringTerms  = (StringTerms) resultInfo.getAggregation(skuSpec);
             List<String> specList = specStringTerms.getBuckets().stream().map(bucket -> bucket.getKeyAsString()).collect(Collectors.toList());
-            resultMap.put("specList",specList);
 
+            resultMap.put("specList",formatSpec(specList));
+
+            // 当前页 每页多少
+            resultMap.put("pageNum",pageNum);
+            resultMap.put("pageSize",pageSize);
+
+        }
+        return resultMap;
+    }
+
+    /**
+     * 规格转换的方法
+     */
+    public Map<String, Set<String>> formatSpec(List<String> specList){
+        Map<String,Set<String>> resultMap = new HashMap<>();
+        // 遍历list
+        for (String specStr : specList) {
+            Map<String,String> specMap = JSON.parseObject(specStr, Map.class);
+
+            // 遍历map
+            for (String key : specMap.keySet()) {
+                Set<String> valueSet = resultMap.get(key);
+                if (valueSet == null){
+                    valueSet = new HashSet<>();
+                }
+                valueSet.add(specMap.get(key));
+
+                resultMap.put(key,valueSet);
+            }
         }
         return resultMap;
     }

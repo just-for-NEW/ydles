@@ -13,6 +13,9 @@ spring:
     elasticsearch:
       cluster-name: elasticsearch
       cluster-nodes: 192.168.200.128:9300
+  thymeleaf:
+    cache: false
+
 eureka:
   client:
     service-url:
@@ -37,3 +40,4 @@ hystrix:
           enabled: false
         isolation:
           strategy: SEMAPHORE
+

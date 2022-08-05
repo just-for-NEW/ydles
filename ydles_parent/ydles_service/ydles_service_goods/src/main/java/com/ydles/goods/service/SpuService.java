@@ -79,4 +79,6 @@ public interface SpuService {
 
     // 回收站删除商品(物理删除)
     void realDelete(String id);
+
+    Spu findSpuById(String id);
 }

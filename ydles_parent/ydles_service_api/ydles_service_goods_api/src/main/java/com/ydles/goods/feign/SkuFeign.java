@@ -11,7 +11,7 @@ import java.util.List;
 public interface SkuFeign {
 
     // 根据spuId查询skuList 也可全部查询
-    @GetMapping("/sku/spu/{spuId}")
+     @GetMapping("/sku/spu/{spuId}")
      List<Sku> findSkuListBySpuId(@PathVariable("spuId") String spuId);
 
 }

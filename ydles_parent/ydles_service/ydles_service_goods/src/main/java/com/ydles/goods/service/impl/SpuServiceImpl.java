@@ -335,6 +335,11 @@ public class SpuServiceImpl implements SpuService {
         spuMapper.deleteByPrimaryKey(id);
     }
 
+    @Override
+    public Spu findSpuById(String id) {
+        return spuMapper.selectByPrimaryKey(id);
+    }
+
     /**
      * 构建查询对象
      * @param searchMap

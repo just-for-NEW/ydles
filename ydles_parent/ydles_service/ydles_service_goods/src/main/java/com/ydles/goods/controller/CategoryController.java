@@ -34,7 +34,7 @@ public class CategoryController {
      * @return
      */
     @GetMapping("/{id}")
-    public Result findById(@PathVariable Integer id){
+    public Result<Category> findById(@PathVariable Integer id){
         Category category = categoryService.findById(id);
         return new Result(true,StatusCode.OK,"查询成功",category);
     }

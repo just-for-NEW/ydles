@@ -28,16 +28,20 @@
         <module name="ydles_eureka" />
         <module name="ydles_service_page" />
         <module name="ydles_service_config" />
+        <module name="ydles-user-oauth" />
+        <module name="ydles_gateway_web" />
         <module name="ydles_service_business_api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ydles-user-oauth" target="1.8" />
       <module name="ydles_canal" target="1.8" />
       <module name="ydles_common" target="1.8" />
       <module name="ydles_common_db" target="1.8" />
       <module name="ydles_eureka" target="1.8" />
       <module name="ydles_gateway" target="1.8" />
       <module name="ydles_gateway_system" target="1.8" />
+      <module name="ydles_gateway_web" target="1.8" />
       <module name="ydles_parent" target="1.8" />
       <module name="ydles_service" target="1.8" />
       <module name="ydles_service_api" target="1.8" />
@@ -62,12 +66,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ydles-user-oauth" options="-parameters" />
       <module name="ydles_canal" options="-parameters" />
       <module name="ydles_common" options="-parameters" />
       <module name="ydles_common_db" options="-parameters" />
       <module name="ydles_eureka" options="-parameters" />
       <module name="ydles_gateway" options="" />
       <module name="ydles_gateway_system" options="-parameters" />
+      <module name="ydles_gateway_web" options="-parameters" />
       <module name="ydles_service_business" options="-parameters" />
       <module name="ydles_service_business_api" options="-parameters" />
       <module name="ydles_service_config" options="-parameters" />

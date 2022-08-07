@@ -5,7 +5,7 @@ spring:
     name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.200.128:3306/ydles_user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.200.128:3306/ydles_user?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: root
   main:

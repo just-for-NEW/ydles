@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ydles-user-oauth/ydles-user-oauth.iml" filepath="$PROJECT_DIR$/ydles-user-oauth/ydles-user-oauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_canal/ydles_canal.iml" filepath="$PROJECT_DIR$/ydles_canal/ydles_canal.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_common/ydles_common.iml" filepath="$PROJECT_DIR$/ydles_common/ydles_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_common_db/ydles_common_db.iml" filepath="$PROJECT_DIR$/ydles_common_db/ydles_common_db.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_eureka/ydles_eureka.iml" filepath="$PROJECT_DIR$/ydles_eureka/ydles_eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_gateway/ydles_gateway.iml" filepath="$PROJECT_DIR$/ydles_gateway/ydles_gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/ydles_gateway_system.iml" filepath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_system/ydles_gateway_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ydles_gateway/ydles_gateway_web/ydles_gateway_web.iml" filepath="$PROJECT_DIR$/ydles_gateway/ydles_gateway_web/ydles_gateway_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_parent.iml" filepath="$PROJECT_DIR$/ydles_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_service/ydles_service.iml" filepath="$PROJECT_DIR$/ydles_service/ydles_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ydles_service_api/ydles_service_api.iml" filepath="$PROJECT_DIR$/ydles_service_api/ydles_service_api.iml" />

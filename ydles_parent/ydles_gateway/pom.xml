@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>ydles_gateway_system</module>
+        <module>ydles_gateway_web</module>
     </modules>
 
     <!--网关依赖-->
@@ -35,6 +36,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
             <version>2.1.3.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!--鉴权-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
         </dependency>
     </dependencies>
 </project>

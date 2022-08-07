@@ -18,6 +18,7 @@
         <module>ydles_common</module>
         <module>ydles_common_db</module>
 		<module>ydles_canal</module>
+        <module>ydles-user-oauth</module>
     </modules>
 
     <parent>

@@ -1,0 +1,325 @@
+.main {
+  margin: 10px 0;
+}
+a {
+  color: #666;
+}
+.sousuo {
+  color: #fff;
+}
+em,
+i {
+  font-style: normal;
+}
+.sui-btn.btn-bordered.btn-danger:hover,
+.sui-btn.btn-bordered.btn-danger:focus,
+.operate .sui-btn.btn-bordered.btn-danger:active,
+.operate .sui-btn.btn-bordered.btn-danger.active {
+  border: 1px solid #8A0808;
+  background-color: #8A0808;
+}
+.typeNav {
+  background-color: #1c1c1c;
+}
+.bread,
+.selector,
+.type-wrap,
+.value {
+  overflow: hidden;
+}
+.bread,
+.selector,
+.details,{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.hot-sale {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.bread .form-dark {
+  /* margin-bottom: 5px; */
+}
+.hot-sale,
+.selector,
+.filter {
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.1) -2px 0px 3px 0px; 
+  margin: 10px 0 20px 0;
+}
+.key {
+  padding: 6px 10px 0 15px;
+}
+.type-wrap ul li {
+  float: left;
+  list-style-type: none;
+}
+.sui-btn {
+  border-radius: 0;
+}
+.bread .sui-breadcrumb {
+  padding: 3px 0;
+  margin: 0;
+}
+.bread .sui-tag {
+  margin: 0 0 0 20px;
+}
+.type-wrap {
+  margin: 0;
+  position: relative;
+  border-top: 1px solid #eee;
+}
+.type-wrap:first-child {
+  border-top: 0;
+}
+.type-wrap .key {
+  width: 100px;
+  background: #f5f5f5;
+  line-height: 36px;
+  text-align: left;
+}
+.logo .brand {
+  padding-bottom: 42px;
+}
+.type-wrap .value {
+  padding: 10px 0 0 15px;
+  color: #333;
+}
+.type-wrap .value .sui-tag {
+  margin-bottom: 0;
+  padding: 0;
+}
+.type-wrap .logos {
+  margin-left: 120px;
+  padding-right: 90px;
+}
+.type-wrap .ext {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.ext .sui-btn {
+  padding: 0 10px;
+  background: #fff;
+}
+.ext a {
+  color: #666;
+  vertical-align: middle;
+}
+ul.type-list li {
+  display: block;
+  margin-right: 30px;
+  line-height: 26px;
+}
+ul.type-list li a {
+  cursor: pointer;
+  color: #666;
+  padding: 2px;
+  text-decoration: none;
+}
+ul.type-list li a.redhover {
+  background: #8A0808;
+  color: #fff;
+  padding: 2px;
+  text-decoration: none;
+}
+ul.type-list li a.grayhover {
+  color: #555;
+}
+ul.logo-list li {
+  margin: -1px -1px 0 0;
+  width: 105px;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+  font-size: 12px;
+}
+.filter {
+  background: #f1f1f1;
+}
+.sui-navbar {
+  margin-bottom: 0;
+}
+.sui-navbar .navbar-inner {
+  padding-left: 0;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.1) -2px 0px 3px 0px; 
+}
+.sui-navbar .sui-nav > .active > a {
+  background: #1c1c1c;
+  color: #fff;
+}
+.goods-list {
+  margin: 20px 0;
+}
+.goods-list ul li {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.goods-list ul li:hover {
+  box-shadow: 0 0 10px 2px #ededed;
+}
+.goods-list .p-img {
+  width: 255px;
+  height: 255px;
+  padding: 0 22.5px;
+}
+.p-img,
+.price,
+.attr,
+.cu,
+.commit,
+.operate {
+  padding-left: 22.5px;
+}
+.p-img {
+  padding-left: 11.250px;
+  padding-right: 11.250px;
+}
+.attr {
+  /* width: 85%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  min-height: 38px;
+  cursor: pointer;
+  line-height: 1.8; */
+  padding: 0 20px 10px 20px;
+  text-align: left;
+}
+.attr a {
+  color: #333;
+  text-decoration: none;
+}
+.attr a:hover {
+  color: #c81623;
+}
+.cu,
+.commit {
+  height: 22px;
+}
+.commit {
+  font-size: 13px;
+  color: #a7a7a7;
+}
+.commit .command span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+}
+.price {
+  padding: 0 20px 10px 20px;
+  font-size: 18px;
+  color: #c81623;
+  text-align: left;
+}
+.price i {
+  margin-left: -5px;
+}
+.cu span {
+  background: #c81623;
+  color: #fff;
+  padding: 3px;
+  margin-right: 3px;
+}
+.operate {
+  padding: 0px 20px 20px;
+}
+.operate .sui-btn.btn-bordered {
+  min-width: 85px;
+}
+.sui-btn.btn-bordered.btn-danger {
+  margin-right: 15px;
+  background-color: #8a0808;
+  border: 1px solid #8a0808;
+  color: #fff;
+}
+.sui-btn.btn-bordered.btn-danger:hover {
+  margin-right: 15px;
+  background-color: #a40606;
+  border: 1px solid #a40606;
+  color: #fff;
+}
+.sui-pagination ul > li > a:hover,
+.sui-pagination ul > li > a:focus {
+  border: 1px solid #1c1c1c;
+  background: #1c1c1c;
+}
+.page {
+  width: 770px;
+  height: 66px;
+  overflow: hidden;
+}
+.sui-pagination div {
+  float: right;
+  width: 254px;
+}
+.sui-pagination ul {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 490px;
+  float: left;
+}
+.sui-pagination ul > .active > a {
+  background-color: #fff;
+  color: #8A0808;
+  border-color: #fff;
+  cursor: default;
+}
+.sui-pagination ul > .active > a:hover {
+  background: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+.sui-pagination ul > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.pagination-large ul > li > a,
+.pagination-large ul > li > span {
+  padding: 9px 18px;
+  color: #333;
+}
+.sui-pagination ul > li > a:hover {
+  background: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+.sui-pagination ul > .dotted > span,
+.sui-pagination ul > .dotted > a {
+  border: 0;
+}
+.pagination-large div .page-num {
+  padding: 9px 18px;
+}
+.pagination-large div .page-num + . {
+  padding: 7px 16px;
+  color: #666;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+}
+.sui-pagination div {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.hot-sale .hot-list {
+  padding: 15px;
+}
+.hot-sale .title {
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 10px 0 10px 15px;
+}
+.sort {
+  position: absolute;
+  display: none;
+}
